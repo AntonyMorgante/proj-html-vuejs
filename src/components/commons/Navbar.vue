@@ -42,14 +42,16 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import "../../assets/globals.scss";
+
     nav{
         display: inline-block;
     }
 
     a{
         text-decoration: none;
-        color:#78787a;
+        color:$secondary;
         margin: 20px;
     }
 

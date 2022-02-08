@@ -6,7 +6,7 @@
           </div>
           <div class="right">
               <Navbar />
-              <button>Schedule a workout</button>
+              <button class="blue-button">Schedule a workout</button>
               <Actions />
           </div>
       </div>
@@ -28,9 +28,11 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import "../../assets/globals.scss";
+
     header{
-        background-color: #060606;
+        background-color: $dark;
         padding: 20px;
     }
 
@@ -54,12 +56,18 @@ export default {
         float: right;
     }
 
-    button{
+    .blue-button{
         border:none;
         padding: 15px 25px;
         border-radius:25px;
-        background-color: #4154fe;
+        background-color: $primary;
         color:white;
         margin: 0 15px;
+        transition: background-color 0.2s;
+
+        &:hover{
+            background-color: $reddish;
+        }
     }
+    
 </style>

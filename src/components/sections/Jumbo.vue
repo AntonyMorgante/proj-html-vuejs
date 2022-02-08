@@ -1,15 +1,114 @@
 <template>
   <section id="jumbo">
-
+    <div class="container">
+      <div class="row center-align">
+        <div class="col-70">
+          <p class="red-text">Certified fitness professional</p>
+          <h1>Take control of your health</h1>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          </p>
+          <div>
+            <button class="blue-button">Visit my Youtube channel</button>
+            <button class="transparent-button">Buy Avada today</button>
+          </div>
+        </div>
+        <div class="col-30 text-center">
+          <PlayButton />
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 
 <script>
+import PlayButton from "../commons/PlayButton.vue"
+
 export default {
-    name:"Jumbo"
+    name:"Jumbo",
+    components:{
+      PlayButton
+    }
 }
 </script>
 
-<style>
+<style lang="scss">
+@import "../../assets/globals.scss";
 
+  #jumbo{
+    background-image: url("../../assets/jumbo-background.jpg");
+    background-size: cover;
+    padding-bottom:100px;
+    position:relative;
+  }
+
+  #jumbo::after{
+    content:"";
+    display: inline-block;
+    color:white;
+    width:500px;
+    height:700px;
+    position:absolute;
+    top:0;
+    left:32%;
+    box-shadow: inset 300px 0px 60px -10px $dark;
+  }
+
+  .container{
+    max-width:1370px;
+  }
+
+  .row{
+    display: flex;
+    min-height: 600px;
+  }
+
+  .center-align{
+    align-items: center;
+  }
+
+  .text-center{
+    text-align: center;
+  }
+
+  .col-70{
+    flex-basis:70%;
+    z-index:3;
+
+    .red-text{
+      color:red;
+      font-size:23px;
+    }
+
+    h1{
+      color:white;
+      font-size: 60px;
+      margin: 20px 0;
+    }
+
+    .paragraph{
+      font-size:23px;
+      color: $secondary;
+    }
+
+    .transparent-button{
+    border:1px solid white;
+    padding: 15px 25px;
+    border-radius:25px;
+    background-color: transparent;
+    color:white;
+    transition: background-color 0.2s, color 0.2s;
+    
+    &:hover{
+      background-color: white;
+      color:black;
+    }
+    }
+
+
+  }
+
+  .col-30{
+    flex-basis: 30%;
+  }
 </style>
