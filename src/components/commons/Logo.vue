@@ -1,8 +1,5 @@
 <template>
-  <div class="logo-container">
-      <img src="../../assets/logo.png" alt="">
-      <h1>Avada Fitness</h1>
-  </div>
+  <img src="../../assets/logo.png" alt="">
 </template>
 
 <script>
@@ -12,8 +9,5 @@ export default {
 </script>
 
 <style>
-    .logo-container{
-        display: flex;
-        align-content: center;
-    }
+
 </style>

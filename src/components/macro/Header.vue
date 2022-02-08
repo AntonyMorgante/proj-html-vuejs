@@ -29,6 +29,11 @@ export default {
 </script>
 
 <style>
+    header{
+        background-color: #060606;
+        padding: 20px;
+    }
+
     .container{
         max-width:1170px;
         margin:0 auto;
@@ -38,5 +43,23 @@ export default {
         content: "";
         display: table;
         clear: both;
+    }
+
+    .left{
+        float:left;
+        padding-top:3px;
+    }
+
+    .right{
+        float: right;
+    }
+
+    button{
+        border:none;
+        padding: 15px 25px;
+        border-radius:25px;
+        background-color: #4154fe;
+        color:white;
+        margin: 0 15px;
     }
 </style>

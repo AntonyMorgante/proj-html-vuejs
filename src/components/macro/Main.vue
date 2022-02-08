@@ -1,7 +1,7 @@
 <template>
   <main>
       <Jumbo />
-      <Sevices />
+      <Services />
       <Videos />
       <MailingList />
       <Blog />
