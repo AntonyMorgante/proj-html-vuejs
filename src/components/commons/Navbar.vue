@@ -49,7 +49,23 @@ export default {
 
     a{
         text-decoration: none;
+        color:#78787a;
+        margin: 20px;
+    }
+
+    nav a:first-of-type{
         color:white;
-        padding: 10px;
+    }
+
+    nav a:last-child::after{
+        content:"new";
+        margin-left:7px;
+        padding:5px;
+        color:black;
+        background-color:yellow;
+        font-size: 12px;
+        border-radius: 2px;
+        position:relative;
+        top: -2px;
     }
 </style>
