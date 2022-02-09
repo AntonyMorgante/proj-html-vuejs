@@ -42,7 +42,7 @@ export default {
     background-image: url("../../assets//banner1-2x.jpg");
     background-size: cover;
     min-height: 650px;
-    box-shadow: inset 1100px 0px 200px -10px $dark;
+    box-shadow: inset 1000px 0px 100px 5px $dark;
   }
   
   .fs-22{

@@ -4,6 +4,7 @@
       <ServiceList />
       <Videos />
       <MailingList />
+      <Activities />
       <Blog />
       <Store />
       <Partners />
@@ -16,6 +17,7 @@ import Jumbo from "../sections/Jumbo.vue"
 import ServiceList from "../sections/ServiceList.vue"
 import Videos from "../sections/Videos.vue"
 import MailingList from "../sections/MailingList.vue"
+import Activities from "../sections/Activities.vue"
 import Blog from "../sections/Blog.vue"
 import Store from "../sections/Store.vue"
 import Partners from "../sections/Partners.vue"
@@ -28,6 +30,7 @@ export default {
         ServiceList,
         Videos,
         MailingList,
+        Activities,
         Blog,
         Store,
         Partners,

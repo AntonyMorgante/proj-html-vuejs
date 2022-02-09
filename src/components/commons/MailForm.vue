@@ -1,6 +1,6 @@
 <template>
   <div class="form">
-    <input type="text" placeholder="Insert your email...*">
+    <input type="email" placeholder="Insert your email...*">
     <button class="blue button">Subscribe</button>
   </div>
 </template>
@@ -17,7 +17,7 @@ export default {
   }
 
   input{
-    padding: 17px 400px 17px 20px;
+    padding: 17px 370px 17px 30px;
     border-radius:30px;
     font-size:16px;
   }
