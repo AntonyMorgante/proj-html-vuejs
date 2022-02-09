@@ -46,12 +46,31 @@ body{
   display: flex;
 }
 
+.space-between{
+  justify-content: space-between;
+}
+
 .center-align{
   align-items: center;
 }
 
+.col-70{
+  flex-basis:70%;
+  z-index:3;
+}
+
 .text-center{
   text-align: center;
+}
+
+.text-right{
+  text-align: right;
+}
+
+h1{
+  color:white;
+  font-size: 60px;
+  margin: 20px 0;
 }
 
 .button{
@@ -69,5 +88,18 @@ body{
     &:hover{
         background-color: $sienna;
     }
+}
+
+  .red-text{
+    color:$reddish;
+    font-size:25px;
+  }
+
+.m-b-25{
+  margin-bottom: 25px;
+}
+
+.fs-22{
+  font-size: 22px;
 }
 </style>

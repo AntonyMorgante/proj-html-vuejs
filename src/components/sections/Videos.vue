@@ -12,9 +12,23 @@
           <p class="blue-text">Tune up your workouts</p>
           <p class="section-title">The best health & fitness advice online</p>
           <YoutubeChannel />
-          <p class="section-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quam magni odio porro eveniet illum tenetur.</p>
+          <p class="fs-22">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quam magni odio porro eveniet illum tenetur.</p>
           <button class="red button"><i class="fa-brands fa-youtube"></i> Visit my Youtube channel</button>
         </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row space-between m-b-25">
+        <div class="col-30 fs-22">Featured playlists</div>
+        <div class="col-30 text-right">View all videos <i class="fa-solid fa-angle-right"></i></div>
+      </div>
+      <div class="row space-between">
+        <Playlist 
+        v-for="(playlist,index) in playlists" 
+        :key=index
+        :name=playlist.name
+        :description=playlist.description
+        :img=playlist.img />
       </div>
     </div>
   </section>
@@ -23,12 +37,35 @@
 <script>
 import PlayButton from "../commons/PlayButton.vue";
 import YoutubeChannel from "../commons/YoutubeChannel.vue";
+import Playlist from "../commons/Playlist.vue"
 
 export default {
     name : "Videos",
     components:{
       PlayButton,
-      YoutubeChannel
+      YoutubeChannel,
+      Playlist
+    },
+    data(){
+      return{
+        playlists:[
+          {
+            name: "Thigs & glute workout",
+            description: "Increase your mobility",
+            img: "video2-2x.jpg"
+          },
+          {
+            name: "Lift, firm & perk up",
+            description: "Feel young again",
+            img: "video7-2x.jpg"
+          },
+          {
+            name: "Slim & trim your waist",
+            description: "Shed those extra pounds",
+            img: "video9-2x.jpg"
+          },
+        ]
+      }
     }
 }
 </script>
@@ -72,9 +109,6 @@ export default {
       color:black
     }
 
-    .section-paragraph{
-      font-size:22px;
-    }
   }
 
 .red{

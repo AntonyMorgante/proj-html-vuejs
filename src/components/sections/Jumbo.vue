@@ -56,20 +56,6 @@ export default {
   }
 
   .col-70{
-    flex-basis:70%;
-    z-index:3;
-
-    .red-text{
-      color:$reddish;
-      font-size:25px;
-    }
-
-    h1{
-      color:white;
-      font-size: 60px;
-      margin: 20px 0;
-    }
-
     .paragraph{
       font-size:23px;
       color: $secondary;
