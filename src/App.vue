@@ -35,4 +35,20 @@ body{
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
 }
+
+.container{
+  max-width:1370px;
+}
+
+.row{
+  display: flex;
+}
+
+.center-align{
+  align-items: center;
+}
+
+.text-center{
+  text-align: center;
+}
 </style>

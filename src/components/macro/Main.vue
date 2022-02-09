@@ -1,7 +1,7 @@
 <template>
   <main>
       <Jumbo />
-      <Services />
+      <ServiceList />
       <Videos />
       <MailingList />
       <Blog />
@@ -13,7 +13,7 @@
 
 <script>
 import Jumbo from "../sections/Jumbo.vue"
-import Services from "../sections/Services.vue"
+import ServiceList from "../sections/ServiceList.vue"
 import Videos from "../sections/Videos.vue"
 import MailingList from "../sections/MailingList.vue"
 import Blog from "../sections/Blog.vue"
@@ -25,7 +25,7 @@ export default {
     name: "Main",
     components:{
         Jumbo,
-        Services,
+        ServiceList,
         Videos,
         MailingList,
         Blog,

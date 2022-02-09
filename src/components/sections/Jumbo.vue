@@ -32,6 +32,10 @@ export default {
 }
 </script>
 
+<style>
+
+</style>
+
 <style lang="scss">
 @import "../../assets/globals.scss";
 
@@ -40,35 +44,12 @@ export default {
     background-size: cover;
     padding-bottom:100px;
     position:relative;
+    box-shadow: inset 900px 0px 60px -10px $dark;
   }
 
-  #jumbo::after{
-    content:"";
-    display: inline-block;
-    color:white;
-    width:500px;
-    height:700px;
-    position:absolute;
-    top:0;
-    left:32%;
-    box-shadow: inset 300px 0px 60px -10px $dark;
-  }
-
-  .container{
-    max-width:1370px;
-  }
-
-  .row{
+  #jumbo .row{
     display: flex;
     min-height: 600px;
-  }
-
-  .center-align{
-    align-items: center;
-  }
-
-  .text-center{
-    text-align: center;
   }
 
   .col-70{
@@ -76,8 +57,8 @@ export default {
     z-index:3;
 
     .red-text{
-      color:red;
-      font-size:23px;
+      color:$reddish;
+      font-size:25px;
     }
 
     h1{
