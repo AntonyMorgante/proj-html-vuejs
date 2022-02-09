@@ -26,6 +26,7 @@ export default {
         font-size:20px;
         position:relative;
         top:50%;
-        transform: translateY(-50%);
+        left:50%;
+        transform: translate(-50%,-50%);
     }
 </style>

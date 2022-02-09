@@ -23,6 +23,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "./assets/globals.scss";
+
 body{
   box-sizing: border-box;
   margin:0;
@@ -30,7 +32,7 @@ body{
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
@@ -50,5 +52,22 @@ body{
 
 .text-center{
   text-align: center;
+}
+
+.button{
+  border:none;
+  padding: 15px 25px;
+  border-radius:25px;
+}
+
+.blue.button{
+    background-color: $primary;
+    color:white;
+    margin: 0 15px;
+    transition: background-color 0.2s;
+
+    &:hover{
+        background-color: $sienna;
+    }
 }
 </style>

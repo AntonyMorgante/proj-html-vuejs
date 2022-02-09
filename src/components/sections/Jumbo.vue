@@ -5,15 +5,16 @@
         <div class="col-70">
           <p class="red-text">Certified fitness professional</p>
           <h1>Take control of your health</h1>
+          <Waves />
           <p class="paragraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           </p>
           <div>
-            <button class="blue-button">Visit my Youtube channel</button>
-            <button class="transparent-button">Buy Avada today</button>
+            <button class="blue button"><i class="fa-brands fa-youtube"></i> Visit my Youtube channel</button>
+            <button class="transparent button">Buy Avada today</button>
           </div>
         </div>
-        <div class="col-30 text-center">
+        <div class="col-30">
           <PlayButton />
         </div>
       </div>
@@ -22,12 +23,14 @@
 </template>
 
 <script>
-import PlayButton from "../commons/PlayButton.vue"
+import PlayButton from "../commons/PlayButton.vue";
+import Waves from "../commons/Waves.vue"
 
 export default {
     name:"Jumbo",
     components:{
-      PlayButton
+      PlayButton,
+      Waves
     }
 }
 </script>
@@ -70,9 +73,10 @@ export default {
     .paragraph{
       font-size:23px;
       color: $secondary;
+      margin: 30px 0;
     }
 
-    .transparent-button{
+    .transparent.button{
     border:1px solid white;
     padding: 15px 25px;
     border-radius:25px;
@@ -85,8 +89,11 @@ export default {
       color:black;
     }
     }
+  }
 
-
+  .waves{
+    color:yellow;
+    font-size:25px;
   }
 
   .col-30{

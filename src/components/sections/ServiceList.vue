@@ -78,7 +78,7 @@ export default {
   .quote-container{
     width:75%;
     margin:0 auto;
-    padding-top:100px;
+    padding:100px 0 50px;
   }
 
   h2{

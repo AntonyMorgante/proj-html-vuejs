@@ -6,7 +6,7 @@
           </div>
           <div class="right">
               <Navbar />
-              <button class="blue-button">Schedule a workout</button>
+              <button class="blue button">Schedule a workout</button>
               <Actions />
           </div>
       </div>
@@ -55,19 +55,4 @@ export default {
     .right{
         float: right;
     }
-
-    .blue-button{
-        border:none;
-        padding: 15px 25px;
-        border-radius:25px;
-        background-color: $primary;
-        color:white;
-        margin: 0 15px;
-        transition: background-color 0.2s;
-
-        &:hover{
-            background-color: $reddish;
-        }
-    }
-    
 </style>
