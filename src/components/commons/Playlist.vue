@@ -5,7 +5,7 @@
       <PlayButton />
     </div>
     <div class="text-center">
-      <p class="playlist-name">{{name}}</p>
+      <p class="playlist-name text-black">{{name}}</p>
       <p class="playlist-description">{{description}}</p>
     </div>
   </div>

@@ -10,7 +10,7 @@
       <div class="right">
         <div class="right-container">
           <p class="blue-text">Tune up your workouts</p>
-          <p class="section-title">The best health & fitness advice online</p>
+          <p class="section-title text-black">The best health & fitness advice online</p>
           <YoutubeChannel />
           <p class="fs-22">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quam magni odio porro eveniet illum tenetur.</p>
           <button class="red button"><i class="fa-brands fa-youtube"></i> Visit my Youtube channel</button>
@@ -18,9 +18,9 @@
       </div>
     </div>
     <div class="container">
-      <div class="row space-between m-b-25">
-        <div class="col-30 fs-22">Featured playlists</div>
-        <div class="col-30 text-right">View all videos <i class="fa-solid fa-angle-right"></i></div>
+      <div class="row space-between m-b-25 center-align">
+        <div class="col-30 fs-22 text-black">Featured playlists</div>
+        <a href="#" class="text-right text-black">View all videos <i class="fa-solid fa-angle-right"></i></a>
       </div>
       <div class="row space-between">
         <Playlist 
@@ -106,7 +106,6 @@ export default {
     .section-title{
       font-size: 60px;
       margin: 25px 0;
-      color:black
     }
 
   }
@@ -124,4 +123,8 @@ export default {
 .red.button:hover{
   background-color: $sienna;
 }
+  #videos .container a{
+    margin:0;
+  }
+
 </style>

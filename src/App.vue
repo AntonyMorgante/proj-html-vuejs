@@ -102,4 +102,8 @@ h1{
 .fs-22{
   font-size: 22px;
 }
+
+.text-black{
+  color:black;
+}
 </style>
