@@ -36,18 +36,20 @@ export default {
   }
 
   .content-container{
-    width:75%;
+    width:70%;
     margin:0 auto;
   }
 
   .title{
-    font-size:60px;
-    margin: 80px 0 40px;
+    font-size:55px;
+    margin: 80px 0 30px;
+    line-height: 75px;
   }
 
   .paragraph{
     font-size: 25px;
-    margin: 15px 0 35px;
+    line-height: 35px;
+    margin: 30px 0 35px;
   }
 
   .blue.button{
