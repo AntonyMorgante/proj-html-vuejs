@@ -9,6 +9,15 @@
       <Store />
       <Partners />
       <DailyContent />
+      <div class="laterals">
+        <Lateral
+        v-for="(offer,index) in laterals"
+        :key=index
+        :icon=offer.icon
+        :text=offer.text
+        :url=offer.url
+        />
+      </div>
   </main>
 </template>
 
@@ -22,6 +31,7 @@ import Blog from "../sections/Blog.vue"
 import Store from "../sections/Store.vue"
 import Partners from "../sections/Partners.vue"
 import DailyContent from "../sections/DailyContent.vue"
+import Lateral from "../commons/Lateral.vue"
 
 export default {
     name: "Main",
@@ -34,11 +44,37 @@ export default {
         Blog,
         Store,
         Partners,
-        DailyContent
+        DailyContent,
+        Lateral
+    },
+    data(){
+        return{
+            laterals:[
+                {
+                    name:"Demos",
+                    icon:"fa-solid fa-floppy-disk",
+                    text:"Demos",
+                    url: "#"
+                },
+                {
+                    name:"On sale",
+                    icon:"fa-solid fa-magnifying-glass-dollar",
+                    text:"On Sale",
+                    url: "#"
+                }
+            ]
+        }
     }
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+    .laterals{
+        z-index:99;
+        display: flex;
+        flex-direction: column;
+        position:fixed;
+        right:-5px;
+        top: 200px;
+    }
 </style>

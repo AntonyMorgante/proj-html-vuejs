@@ -77,6 +77,7 @@ h1{
   border:none;
   padding: 15px 25px;
   border-radius:25px;
+  cursor: pointer;
 }
 
 .blue.button{
