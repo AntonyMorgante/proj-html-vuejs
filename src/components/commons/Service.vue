@@ -1,11 +1,11 @@
 <template>
-  <div class="service-card" :style='{ backgroundImage: `url("${getUrl(img)}")`}'>
+  <a href="#" class="service-card" :style='{ backgroundImage: `url("${getUrl(img)}")`}'>
       <div class="description"> 
         <Waves />
         <p class="title">{{title}}</p>
         <p class="disclaimer">{{disclaimer}}</p>        
       </div>
-  </div>
+  </a>
 </template>
 
 <script>
@@ -36,6 +36,7 @@ export default {
     background-size: cover;
     box-shadow: inset 0px -100px 150px black;
     border-bottom-right-radius: 50px;
+    margin:0px;
   
     .description{
       position:relative;

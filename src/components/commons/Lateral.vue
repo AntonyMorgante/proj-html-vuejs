@@ -13,7 +13,7 @@ export default {
     props:{
       icon: String,
       text: String,
-      url: String
+      url: String,
     }
 }
 </script>

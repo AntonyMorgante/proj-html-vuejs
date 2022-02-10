@@ -3,7 +3,7 @@
     <div>
       <img :src="getUrl(img)" alt="">
     </div>
-    <p class="fs-22 text-black">{{title}}</p>
+    <a href="#" class="fs-22 text-black">{{title}}</a>
     <div class="row">
       <span>By <a class="text-black" href="#">{{author}}</a></span>
       <span>| {{date}} |</span>
@@ -30,7 +30,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
   .article-card{
     flex-basis:30%;
@@ -38,14 +38,15 @@ export default {
 
     img{
       width:100%;
+      margin-bottom:20px;
     }
 
-    p{
-      margin:20px 20px 10px;
+    a.fs-22{
+      padding-left:25px;
     }
 
     .row{
-      margin-left:20px;
+      margin:10px 20px;
     }
 
     a{

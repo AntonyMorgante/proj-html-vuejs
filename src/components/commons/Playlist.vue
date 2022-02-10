@@ -5,7 +5,7 @@
       <PlayButton />
     </div>
     <div class="text-center">
-      <p class="playlist-name text-black">{{name}}</p>
+      <a href="#" class="playlist-name text-black">{{name}}</a>
       <p class="playlist-description">{{description}}</p>
     </div>
   </div>
@@ -42,6 +42,7 @@ export default {
 
     .image-container{
       position: relative;
+      margin-bottom:25px;
     }
 
     img{
@@ -54,18 +55,17 @@ export default {
     top:50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width:50px;
-    height:50px;
+    width:60px;
+    height:60px;
     }
   }
 
   .playlist-name{
     font-size:22px;
-    margin: 25px 0 10px;
   }
 
   .playlist-description{
     color: $primary;
-    margin: 0;
+    margin:10px 0;
   }
 </style>

@@ -39,7 +39,7 @@ export default {
 
 </style>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../../assets/globals.scss";
 
   #jumbo{
@@ -60,29 +60,12 @@ export default {
       font-size:23px;
       color: $secondary;
       margin: 30px 0;
-    }
-
-    .transparent.button{
-    border:1px solid white;
-    padding: 15px 25px;
-    border-radius:25px;
-    background-color: transparent;
-    color:white;
-    transition: background-color 0.2s, color 0.2s;
-    
-    &:hover{
-      background-color: white;
-      color:black;
-    }
-    }
+    } 
   }
 
-  .waves{
-    color:yellow;
-    font-size:25px;
-  }
-
-  .col-30{
-    flex-basis: 30%;
+  .blue.button,
+  .transparent.button{
+    margin-left:0;
+    padding:18px 40px;
   }
 </style>

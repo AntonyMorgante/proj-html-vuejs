@@ -38,49 +38,49 @@ body{
   color: #2c3e50;
 }
 
-.container{
-  max-width:1370px;
-}
+  .container{
+    max-width:1370px;
+  }
 
-.row{
-  display: flex;
-}
+  .row{
+    display: flex;
+  }
 
-.space-between{
-  justify-content: space-between;
-}
+  .space-between{
+    justify-content: space-between;
+  }
 
-.center-align{
-  align-items: center;
-}
+  .center-align{
+    align-items: center;
+  }
 
-.col-70{
-  flex-basis:70%;
-  z-index:3;
-}
+  .col-70{
+    flex-basis:70%;
+    z-index:3;
+  }
 
-.text-center{
-  text-align: center;
-}
+  .text-center{
+    text-align: center;
+  }
 
-.text-right{
-  text-align: right;
-}
+  .text-right{
+    text-align: right;
+  }
 
-h1{
-  color:white;
-  font-size: 60px;
-  margin: 20px 0;
-}
+  h1{
+    color:white;
+    font-size: 60px;
+    margin: 20px 0;
+  }
 
-.button{
-  border:none;
-  padding: 15px 25px;
-  border-radius:25px;
-  cursor: pointer;
-}
+  .button{
+    border:none;
+    padding: 15px 25px;
+    border-radius:25px;
+    cursor: pointer;
+  }
 
-.blue.button{
+  .blue.button{
     background-color: $primary;
     color:white;
     margin: 0 15px;
@@ -89,22 +89,46 @@ h1{
     &:hover{
         background-color: $sienna;
     }
-}
+  }
 
   .red-text{
     color:$reddish;
     font-size:25px;
   }
 
-.m-b-25{
-  margin-bottom: 25px;
-}
+  .m-b-25{
+    margin-bottom: 25px;
+  }
 
-.fs-22{
-  font-size: 22px;
-}
+  .fs-22{
+    font-size: 22px;
+  }
 
-.text-black{
-  color:black;
-}
+  .text-black{
+    color:black;
+  }
+
+  .transparent.button{
+    border:1px solid white;
+    padding: 15px 25px;
+    border-radius:25px;
+    background-color: transparent;
+    color:white;
+    transition: background-color 0.2s, color 0.2s;
+    
+    &:hover{
+      background-color: white;
+      color:black;
+    }
+
+  }
+
+  .waves{
+    color:yellow;
+    font-size:25px;
+  }
+
+  .col-30{
+    flex-basis: 30%;
+  }
 </style>
