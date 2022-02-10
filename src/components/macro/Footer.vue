@@ -18,6 +18,11 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss">
+@import "../../assets/globals.scss";
+    footer{
+        background-color: $dark;
+        text-align: center;
+        color:white;
+    }
 </style>
